@@ -8,6 +8,34 @@
 
 
 <html>
+	<style>
+	@media only screen and (min-width: 480px){
+			#menubutton {
+				display: none;
+			}
+
+			#menustrip {
+				display: block;	
+			}
+
+
+		}
+
+	@media only screen and (max-width:480px){
+			#menubutton {
+				display: block;
+			}
+
+			#menustrip {
+				display: none;	
+			}
+
+
+
+		}	
+
+
+	</style>
 
 	
 	<head>
@@ -28,7 +56,12 @@
 					<header id="header" class="alt">
 						<h1><a href="index.html">EOP</a></h1>
 						<nav>
-							<a href="#menu">Menu</a>
+							<div id = "menustrip"><a href="index.html">Home</a></div>
+							<div id = "menustrip"><a href="index.html">Home</a></div>
+							<div id = "menustrip"><a href="index.html">Home</a></div>
+							<div id="menubutton">
+								<a href="#menu">Menu</a>
+							</div>
 						</nav>
 					</header>
 
